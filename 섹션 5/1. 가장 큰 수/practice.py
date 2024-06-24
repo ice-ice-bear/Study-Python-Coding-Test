@@ -10,5 +10,10 @@ for x in num:
         stack.pop()
         m -= 1
     stack.append(x)
- 
-print(stack)
+
+if m != 0:
+    stack = stack[:-m]
+
+res = ''.join(map(str, stack))
+
+print(res)
